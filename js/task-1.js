@@ -38,39 +38,50 @@
 
 //TODO PRACTIKE
 
-// Функція getLength(array) очікує один параметр array - масив довільних значень. Доповни код функції так, щоб вона перетворювала масив у рядок, без роздільників, і повертала кількість символів в отриманому рядку.
+// Функція calculateTotal(number) приймає ціле число (параметр number). Доповни код функції так, щоб вона повертала суму всіх цілих чисел від одиниці до цього числа включно. Наприклад, якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6.
 
-// Оголошена функція getLength(array)
-// Виклик getLength(["Mango", "hurries", "to", "the", "train"]) повертає 22
-// Виклик getLength(["M", "a", "n", "g", "o"]) повертає 5
-// Виклик getLength(["top", "picks", "for", "you"]) повертає 14
+// Оголошена функція calculateTotal(number)
+// Виклик функції calculateTotal(1) повертає 1
+// Виклик функції calculateTotal(3) повертає 6
+// Виклик функції calculateTotal(0) повертає 0
+// Виклик функції calculateTotal(18) повертає 171
+// Виклик функції calculateTotal(24) повертає 300
+// Виклик функції calculateTotal() з випадковим числом повертає правильне значення
 
-function getLength(array) {
-  const stringArray = array.join("");
-  return stringArray.length;
+// let count = 0;
+
+// while (count < 10) {
+//   console.log(`Count: ${count}`);
+//   count += 1;
+// }
+
+// console.log(Виклик функції calculateTotal(1));
+// console.log(Виклик функції calculateTotal(3));
+// console.log(Виклик функції calculateTotal(0));
+// console.log(Виклик функції calculateTotal(18));
+// console.log(Виклик функції calculateTotal(24));
+// console.log(Виклик функції calculateTotal());
+
+// _________________________________
+
+// Функція createArrayOfNumbers(min, max) приймає два параметра:
+
+// min - ціле число, з якого починаються обчислення
+// max - ціле число, до якого включно триватимуть обчислення
+// Доповни код функції createArrayOfNumbers(min, max) таким чином, щоб вона повертала масив усіх цілих чисел від значення min до max включно.
+
+// Оголошена функція createArrayOfNumbers(min, max)
+// Виклик функції createArrayOfNumbers(1, 3) повертає [1, 2, 3]
+// Виклик функції createArrayOfNumbers(14, 17) повертає [14, 15, 16, 17]
+// Виклик функції createArrayOfNumbers(29, 34) повертає [29, 30, 31, 32, 33, 34]
+// Виклик функції createArrayOfNumbers() з випадковими min і max повертає правильний масив
+// В циклі for використовувався метод push
+
+function createArrayOfNumbers(min, max) {
+
 }
 
-console.log(getLength(["Mango", "hurries", "to", "the", "train"]));
-console.log(getLength(["M", "a", "n", "g", "o"]));
-console.log(getLength(["top", "picks", "for", "you"]));
-
-// Сервісу гравірування прикрас потрібна функція, яка б автоматично рахувала ціну гравірування, залежно від кількості слів і ціни за слово.
-
-// Оголошена функція calculateEngravingPrice(message, pricePerWord). Ця функція приймає першим параметром рядок, що складається зі слів, розділених лише пробілами (параметр message) та другим параметром - число, що містить ціну гравірування за одне слово (параметр pricePerWord).
-
-// Доповни тіло функції так, щоб вона повертала загальну вартість гравірування усіх слів в рядку.
-
-// Оголошена функція calculateEngravingPrice(message, pricePerWord)
-// Виклик calculateEngravingPrice("JavaScript is in my blood", 10) повертає 50
-// Виклик calculateEngravingPrice("JavaScript is in my blood", 20) повертає 100
-// Виклик calculateEngravingPrice("Web-development is creative work", 40) повертає 160
-// Виклик calculateEngravingPrice("Web-development is creative work", 20) повертає 80
-
-function calculateEngravingPrice(message, pricePerWord) {
-  return message.split(" ").length * pricePerWord;
-}
-
-console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
-console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
-console.log(calculateEngravingPrice("Web-development is creative work", 40));
-console.log(calculateEngravingPrice("Web-development is creative work", 20));
+console.log(Виклик функції createArrayOfNumbers(1, 3));
+console.log(Виклик функції createArrayOfNumbers(14, 17));
+console.log(Виклик функції createArrayOfNumbers(29, 34));
+console.log(Виклик функції createArrayOfNumbers());
