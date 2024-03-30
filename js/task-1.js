@@ -38,30 +38,31 @@
 
 //TODO PRACTIKE
 
-// Функція calculateTotal(number) приймає ціле число (параметр number). Доповни код функції так, щоб вона повертала суму всіх цілих чисел від одиниці до цього числа включно. Наприклад, якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6.
+// Функція calculateEvenTotal(number) приймає ціле число (параметр number). Доповни код функції так, щоб вона повертала суму всіх парних цілих чисел від одиниці до цього числа включно. Парні числа — це ті, що можна поділити на 2 без остачі (як це зробити розглядалося у темі Арифметичні операції у модулі 1). Наприклад, якщо number дорівнює 6, то сума - це 2 + 4 + 6, тобто 12.
 
-// Оголошена функція calculateTotal(number)
-// Виклик функції calculateTotal(1) повертає 1
-// Виклик функції calculateTotal(3) повертає 6
-// Виклик функції calculateTotal(0) повертає 0
-// Виклик функції calculateTotal(18) повертає 171
-// Виклик функції calculateTotal(24) повертає 300
-// Виклик функції calculateTotal() з випадковим числом повертає правильне значення
-
-// let count = 0;
-
-// while (count < 10) {
-//   console.log(`Count: ${count}`);
-//   count += 1;
-// }
-
-// console.log(Виклик функції calculateTotal(1));
-// console.log(Виклик функції calculateTotal(3));
-// console.log(Виклик функції calculateTotal(0));
-// console.log(Виклик функції calculateTotal(18));
-// console.log(Виклик функції calculateTotal(24));
-// console.log(Виклик функції calculateTotal());
-
-// _________________________________
+// Оголошена функція calculateEvenTotal(number)
+// Виклик функції calculateEvenTotal(1) повертає 0
+// Виклик функції calculateEvenTotal(3) повертає 2
+// Виклик функції calculateEvenTotal(7) повертає 12
+// Виклик функції calculateEvenTotal(18) повертає 90
+// Виклик функції calculateEvenTotal(27) повертає 182
+// Виклик функції calculateEvenTotal() з випадковим числом повертає правильне значення
 
 
+function calculateEvenTotal(number) {
+
+  let index = 0;
+  let totalPrice = 0;
+
+  for (let i = 0; i <= number; i++) {
+    
+    i % 2 === 1 ? totalPrice + 0 : totalPrice += i;
+  }
+  return totalPrice;
+}
+
+console.log(calculateEvenTotal(1));
+console.log(calculateEvenTotal(3));
+console.log(calculateEvenTotal(7));
+console.log(calculateEvenTotal(18));
+console.log(calculateEvenTotal(27));
