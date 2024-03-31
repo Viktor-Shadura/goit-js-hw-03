@@ -38,31 +38,3 @@
 
 //TODO PRACTIKE
 
-// Функція calculateEvenTotal(number) приймає ціле число (параметр number). Доповни код функції так, щоб вона повертала суму всіх парних цілих чисел від одиниці до цього числа включно. Парні числа — це ті, що можна поділити на 2 без остачі (як це зробити розглядалося у темі Арифметичні операції у модулі 1). Наприклад, якщо number дорівнює 6, то сума - це 2 + 4 + 6, тобто 12.
-
-// Оголошена функція calculateEvenTotal(number)
-// Виклик функції calculateEvenTotal(1) повертає 0
-// Виклик функції calculateEvenTotal(3) повертає 2
-// Виклик функції calculateEvenTotal(7) повертає 12
-// Виклик функції calculateEvenTotal(18) повертає 90
-// Виклик функції calculateEvenTotal(27) повертає 182
-// Виклик функції calculateEvenTotal() з випадковим числом повертає правильне значення
-
-
-function calculateEvenTotal(number) {
-
-  let index = 0;
-  let totalPrice = 0;
-
-  for (let i = 0; i <= number; i++) {
-    
-    i % 2 === 1 ? totalPrice + 0 : totalPrice += i;
-  }
-  return totalPrice;
-}
-
-console.log(calculateEvenTotal(1));
-console.log(calculateEvenTotal(3));
-console.log(calculateEvenTotal(7));
-console.log(calculateEvenTotal(18));
-console.log(calculateEvenTotal(27));
