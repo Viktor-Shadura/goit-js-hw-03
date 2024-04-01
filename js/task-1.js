@@ -36,5 +36,15 @@
 // Виклик slugify("Ten secrets of JavaScript") повертає "ten-secrets-of-javascript"
 // Виклик slugify("How to become a JUNIOR developer in TWO WEEKS") повертає "how-to-become-a-junior-developer-in-two-weeks"
 
-//TODO PRACTIKE
 
+function slugify(title) {
+  
+  let arrayWords = title.split(" ");
+
+  return (arrayWords.join("-")).toLowerCase();
+}
+
+console.log(slugify("Arrays for begginers"));
+console.log(slugify("English for developer"));
+console.log(slugify("Ten secrets of JavaScript"));
+console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
